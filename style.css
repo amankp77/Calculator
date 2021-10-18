@@ -1,0 +1,80 @@
+body{
+    background-color: #222      
+}
+.mbut{
+    background-color: rgba(0, 253, 219, 0.767);
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    margin: 3px;
+    border-radius: 12px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 14vh;
+    border: 2px solid wheat;
+    /* border-radius: 33px; */
+    width: 317px;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 1px 2px 32px 2px white;
+}
+
+
+
+.c{
+    background-color: rgba(253, 253, 253, 0.747);
+    font-size: 22px;
+    border-radius: 12px;
+    height: 68px;
+    margin: 6px 6px 6px 14px;
+}
+
+#cont{
+    display: flex;
+    margin: 2px;
+}
+table{
+     display: flex;
+     flex-direction: column;
+}
+
+#screen{
+       width: 100%;
+       padding: 13px;
+       box-sizing: border-box;
+       font-size: large;
+       background-color: rgb(20, 8, 8);
+       color: aliceblue;
+       position: relative;
+       bottom: 12px;
+}
+
+
+
+h1{
+    color: white;
+    text-align: center;
+    animation: blibk duration timing-function delay iteration-count direction fill-mode;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+}
+
+.small{
+    font-size: 13px;
+}
+
+footer{
+    color: white;
+    position: relative;
+    top: 30vh;
+    text-align: center;
+
+}
