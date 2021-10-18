@@ -3,6 +3,22 @@ let buttons = document.getElementsByClassName("butjs")
 let screen = document.getElementById("screen")
 let value = ""
 valueBackup = NaN
+function checknan(a){
+    try {
+      return eval(a)
+    } catch (RefrenceError) {
+        return "Invalid"
+    }
+}
+function checksqrt(a){
+    value = checknan(a);
+    if(value == "Invalid"){
+        return value
+    }
+    else{
+        return Math.sqrt(value)
+    }
+}
 for (item of buttons) {
     
      item.addEventListener("click",(e)=>{
@@ -28,15 +44,24 @@ for (item of buttons) {
             screen.value  = value
         }
         else if (text == "="){
-            screen.value = eval(screen.value)
+            value = screen.value
+            // value = eval(value)
+            value = checknan(value)
+            screen.value = value
             value = ""
         }
         else if (text == "SQRT"){
             value = screen.value
-            value = eval(value)
-            screen.value = Math.sqrt(value)
+            // value = eval(value)
+            // value = checknan(value)
+            value = checksqrt(value)
+            console.log(value)
+            screen.value = value;
             value = ""
+
+            
         }
+
         else if (text == "Undo-C"){
             
             value = valueBackup
